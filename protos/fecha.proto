@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package fecha;
+
+service FechaService {
+  // Metodo para obtener la fecha siguiente
+  rpc SiguienteFecha (FechaRequest) returns (FechaResponse);
+
+  // Metodo para sumar dias a una fecha
+  rpc SumaDiasFecha (SumaDiasRequest) returns (FechaResponse);
+}
+
+// Mensaje que representa una fecha
+message Fecha {
+  int32 dia = 1;
+  int32 mes = 2;
+  int32 anio = 3;
+}
+
+// Solicitud para obtener la fecha siguiente
+message FechaRequest {
+  Fecha fecha = 1;
+}
+
+// Solicitud para sumar dias a una fecha
+message SumaDiasRequest {
+  Fecha fecha = 1;
+  int32 dias = 2;
+}
+
+// Respuesta que contiene una fecha
+message FechaResponse {
+  Fecha fecha = 1;
+}
