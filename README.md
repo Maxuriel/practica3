@@ -1,4 +1,3 @@
-#Readme
 -Tener Google RPC instalado para Python.
 -Primero ejecuta los protos para crear los archivos necesarios.
 Ejemplo (proto de Fecha):
