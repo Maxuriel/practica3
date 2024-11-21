@@ -1,0 +1,4 @@
+/home/max-linux/UAM/SD/practica3/ej_tirob/build/CMakeFiles/tiro_proto.dir
+/home/max-linux/UAM/SD/practica3/ej_tirob/build/CMakeFiles/client.dir
+/home/max-linux/UAM/SD/practica3/ej_tirob/build/CMakeFiles/edit_cache.dir
+/home/max-linux/UAM/SD/practica3/ej_tirob/build/CMakeFiles/rebuild_cache.dir

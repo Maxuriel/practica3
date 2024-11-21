@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package tiro;
+
+service TiroAlBlanco {
+  // Método para obtener la distancia al centro de la diana
+  rpc DimeCentroDiana (CentroRequest) returns (CentroResponse);
+
+  // Método para disparar el cañón
+  rpc DisparaCannon (DisparoRequest) returns (DisparoResponse);
+
+  // Método para obtener el mejor disparo
+  rpc MejorDisparo (MejorDisparoRequest) returns (MejorDisparoResponse);
+}
+
+// Solicitud para obtener la distancia al centro de la diana
+message CentroRequest {}
+
+// Respuesta que contiene la distancia al centro de la diana
+message CentroResponse {
+  float distancia = 1;
+}
+
+// Solicitud para disparar el cañón
+message DisparoRequest {
+  string usuario = 1;
+  float angulo = 2;
+  float velocidad = 3;
+}
+
+// Respuesta que contiene la distancia al centro de la diana después del disparo
+message DisparoResponse {
+  float distancia_al_centro = 1;
+}
+
+// Solicitud para obtener el mejor disparo
+message MejorDisparoRequest {}
+
+// Respuesta que contiene el nombre del usuario y la distancia de su mejor disparo
+message MejorDisparoResponse {
+  string usuario = 1;
+  float distancia = 2;
+}

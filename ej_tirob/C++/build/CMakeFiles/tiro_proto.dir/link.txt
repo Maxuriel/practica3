@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtiro_proto.a CMakeFiles/tiro_proto.dir/tiro.pb.cc.o CMakeFiles/tiro_proto.dir/tiro.grpc.pb.cc.o
+/usr/bin/ranlib libtiro_proto.a
